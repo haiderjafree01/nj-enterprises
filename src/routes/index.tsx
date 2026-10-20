@@ -1,24 +1,65 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Properties, About, Services, WhyUs, Reviews, Process } from "@/components/site/Sections";
+import { Contact } from "@/components/site/Contact";
+import { Footer, WhatsAppFloat } from "@/components/site/Footer";
+import { BUSINESS } from "@/lib/business";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "NJ Enterprises | Real Estate Agency on Pine Avenue, Lahore";
+const description =
+  "Find residential, commercial and investment property around Pine Avenue and Valencia, Lahore with NJ Enterprises. Rated 4.8/5 on Google.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          name: BUSINESS.name,
+          telephone: BUSINESS.phoneTel,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Main Pine Ave, near Valencia, Ameer Pura",
+            addressLocality: "Lahore",
+            addressRegion: "Punjab",
+            addressCountry: "PK",
+          },
+          aggregateRating: { "@type": "AggregateRating", ratingValue: BUSINESS.rating, reviewCount: BUSINESS.reviews },
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-background focus:p-3">Skip to content</a>
+      <Header />
+      <main id="main">
+        <Hero />
+        <Properties />
+        <About />
+        <Services />
+        <WhyUs />
+        <Reviews />
+        <Process />
+        <Contact />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </>
   );
 }
