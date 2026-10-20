@@ -111,7 +111,7 @@ export function Contact() {
   );
 }
 
-function Field({ label, error, id, children }: { label: string; error?: string; id: string; children: React.ReactNode }) {
+function Field({ label, error, id, children }: { label: string; error?: string | undefined; id: string; children: React.ReactNode }) {
   return (
     <div>
       <label htmlFor={id} className="eyebrow text-ivory/60">{label}</label>
