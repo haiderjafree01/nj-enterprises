@@ -2,16 +2,21 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV } from "@/lib/business";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/nj-logo.png";
 
 export function Logo({ light }: { light?: boolean }) {
   return (
-    <a href="#home" className="flex items-baseline gap-2" aria-label="NJ Enterprises home">
-      <span className={cn("font-display text-3xl font-semibold leading-none", light ? "text-ivory" : "text-primary")}>
-        NJ
-      </span>
-      <span className={cn("eyebrow !text-[0.62rem]", light ? "text-ivory/80" : "text-foreground/70")}>
-        Enterprises
-      </span>
+    <a href="#home" className="flex items-center" aria-label="NJ Enterprises home">
+      <img
+        src={logo}
+        alt="NJ Enterprises"
+        width={116}
+        height={98}
+        className={cn(
+          "h-12 w-auto transition-opacity hover:opacity-80 lg:h-14",
+          light && "drop-shadow-[0_1px_10px_rgba(0,0,0,0.45)]",
+        )}
+      />
     </a>
   );
 }
