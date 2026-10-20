@@ -1,4 +1,5 @@
 import { ArrowUpRight, Home, Tag, Building2, TrendingUp, Search, MessageCircle, Star, Quote, MapPin } from "lucide-react";
+import logo from "@/assets/nj-logo.png";
 import residential from "@/assets/residential.jpg";
 import commercial from "@/assets/commercial.jpg";
 import community from "@/assets/community.jpg";
