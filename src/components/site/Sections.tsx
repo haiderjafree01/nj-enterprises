@@ -72,6 +72,7 @@ export function About() {
           <div className="absolute -bottom-6 -right-6 hidden h-40 w-40 border border-accent lg:block" aria-hidden />
         </Reveal>
         <div>
+          <img src={logo} alt="NJ Enterprises logo" loading="lazy" className="h-24 w-auto" />
           <SectionHead eyebrow="About NJ Enterprises" title="Real Estate Decisions Deserve the Right Guidance." />
           <Reveal delay={150} as="p" className="mt-8 text-lg leading-relaxed text-muted-foreground">
             At NJ Enterprises, we help property seekers explore real estate opportunities around Pine Avenue, Valencia, and nearby areas of Lahore. Our approach focuses on understanding your requirements, identifying suitable options, and helping you move forward with greater confidence.
