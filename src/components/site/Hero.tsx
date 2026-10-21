@@ -36,7 +36,7 @@ export function Hero() {
           <a href="#properties" className="border border-accent bg-accent px-7 py-4 text-sm font-semibold text-accent-foreground transition-colors hover:bg-transparent hover:text-accent">
             Explore Properties
           </a>
-          <a href="#contact" className="border border-ivory/40 px-7 py-4 text-sm font-semibold text-ivory transition-colors hover:border-ivory hover:bg-ivory hover:text-primary">
+          <a href="#contact" className="border border-ivory/40 px-7 py-4 text-sm font-semibold text-ivory transition-colors hover:border-ivory hover:bg-ivory hover:text-foreground">
             Talk to Our Team
           </a>
         </div>

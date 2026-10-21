@@ -57,10 +57,10 @@ export function Contact() {
             </p>
           </Reveal>
           <Reveal delay={250} className="mt-10 flex flex-wrap gap-4">
-            <a href={whatsappLink("Hello NJ Enterprises, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-accent bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-transparent hover:text-accent">
+            <a href={whatsappLink("Hello NJ Enterprises, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory bg-ivory px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-transparent hover:text-ivory">
               <MessageCircle className="h-4 w-4" /> WhatsApp Enquiry
             </a>
-            <a href={BUSINESS.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory/30 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ivory hover:bg-ivory hover:text-primary">
+            <a href={BUSINESS.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory/30 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ivory hover:bg-ivory hover:text-foreground">
               <Navigation className="h-4 w-4" /> Get Directions
             </a>
           </Reveal>
@@ -99,7 +99,7 @@ export function Contact() {
                   <textarea id="message" name="message" rows={3} className={cn(field, "resize-none")} placeholder="Tell us about your requirement" />
                 </Field>
               </div>
-              <button type="submit" className="bg-ivory px-7 py-4 text-sm font-semibold text-primary transition-colors hover:bg-accent sm:col-span-2 sm:justify-self-start">
+              <button type="submit" className="bg-ivory px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:bg-accent sm:col-span-2 sm:justify-self-start">
                 Submit Enquiry
               </button>
               <p className="-mt-4 text-xs text-ivory/50 sm:col-span-2">Your enquiry is sent to our team via WhatsApp.</p>

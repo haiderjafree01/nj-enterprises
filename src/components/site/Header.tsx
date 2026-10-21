@@ -71,7 +71,7 @@ export function Header() {
         </nav>
         <a
           href="#properties"
-          className="hidden border border-accent bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-transparent hover:text-accent lg:inline-block"
+          className="hidden border border-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-transparent hover:text-primary lg:inline-block"
         >
           Explore Properties
         </a>
