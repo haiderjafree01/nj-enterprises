@@ -17,7 +17,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-overlay/90 via-overlay/45 to-overlay/30" />
       <div className="relative mx-auto w-full max-w-7xl px-6 pb-24 pt-40 lg:px-10 lg:pb-32">
-        <p className="eyebrow animate-fade-in text-accent" style={{ animationDelay: "200ms" }}>
+        <p className="eyebrow animate-fade-in text-ivory" style={{ animationDelay: "200ms" }}>
           Your Trusted Real Estate Partner
         </p>
         <h1 className="mt-6 max-w-4xl font-display text-5xl font-medium leading-[1.02] text-ivory sm:text-7xl lg:text-8xl">
@@ -36,7 +36,7 @@ export function Hero() {
           <a href="#properties" className="border border-accent bg-accent px-7 py-4 text-sm font-semibold text-accent-foreground transition-colors hover:bg-transparent hover:text-accent">
             Explore Properties
           </a>
-          <a href="#contact" className="border border-ivory/40 px-7 py-4 text-sm font-semibold text-ivory transition-colors hover:border-ivory hover:bg-ivory hover:text-primary">
+          <a href="#contact" className="border border-ivory/40 px-7 py-4 text-sm font-semibold text-ivory transition-colors hover:border-ivory hover:bg-ivory hover:text-foreground">
             Talk to Our Team
           </a>
         </div>
@@ -47,7 +47,7 @@ export function Hero() {
           Rated {BUSINESS.rating}/5 on Google · {BUSINESS.reviews} Reviews
         </div>
       </div>
-      <a href="#properties" aria-label="Scroll down" className="absolute bottom-8 right-8 hidden flex-col items-center gap-3 text-ivory/70 lg:flex">
+      <a href="#properties" aria-label="Scroll down" className="absolute bottom-8 right-8 hidden flex-col items-center gap-3 text-ivory lg:flex">
         <span className="eyebrow [writing-mode:vertical-rl]">Scroll</span>
         <span className="relative h-16 w-px bg-ivory/20">
           <span className="animate-scroll-line absolute inset-0 bg-accent" />

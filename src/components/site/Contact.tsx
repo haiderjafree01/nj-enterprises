@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 type Errors = Partial<Record<"name" | "phone" | "interest", string>>;
 
 const field =
-  "w-full border-0 border-b border-ivory/25 bg-transparent px-0 py-3 text-ivory placeholder:text-ivory/40 focus:border-accent focus:outline-none focus:ring-0";
+  "w-full border-0 border-b border-ivory/35 bg-transparent px-0 py-3 text-ivory placeholder:text-ivory/75 focus:border-accent focus:outline-none focus:ring-0";
 
 export function Contact() {
   const [errors, setErrors] = useState<Errors>({});
@@ -42,9 +42,9 @@ export function Contact() {
       <div className="mx-auto grid max-w-7xl gap-16 px-6 py-28 lg:grid-cols-[1fr_1.1fr] lg:px-10 lg:py-36">
         <div>
           <Reveal>
-            <p className="eyebrow flex items-center gap-3 text-accent"><span className="h-px w-10 bg-accent" />Contact</p>
+            <p className="eyebrow flex items-center gap-3 text-ivory"><span className="h-px w-10 bg-accent" />Contact</p>
             <h2 className="mt-5 font-display text-5xl font-medium leading-tight lg:text-6xl">Let's Find Your Next Property.</h2>
-            <p className="mt-6 max-w-md text-lg text-ivory/70">Tell us what you are looking for. Our team is ready to discuss your real estate requirements.</p>
+            <p className="mt-6 max-w-md text-lg text-ivory/85">Tell us what you are looking for. Our team is ready to discuss your real estate requirements.</p>
           </Reveal>
           <Reveal delay={150} className="mt-12 space-y-6">
             <a href={`tel:${BUSINESS.phoneTel}`} className="flex items-center gap-4">
@@ -57,10 +57,10 @@ export function Contact() {
             </p>
           </Reveal>
           <Reveal delay={250} className="mt-10 flex flex-wrap gap-4">
-            <a href={whatsappLink("Hello NJ Enterprises, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-accent bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-transparent hover:text-accent">
+            <a href={whatsappLink("Hello NJ Enterprises, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory bg-ivory px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-transparent hover:text-ivory">
               <MessageCircle className="h-4 w-4" /> WhatsApp Enquiry
             </a>
-            <a href={BUSINESS.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory/30 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ivory hover:bg-ivory hover:text-primary">
+            <a href={BUSINESS.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory/30 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ivory hover:bg-ivory hover:text-foreground">
               <Navigation className="h-4 w-4" /> Get Directions
             </a>
           </Reveal>
@@ -99,10 +99,10 @@ export function Contact() {
                   <textarea id="message" name="message" rows={3} className={cn(field, "resize-none")} placeholder="Tell us about your requirement" />
                 </Field>
               </div>
-              <button type="submit" className="bg-ivory px-7 py-4 text-sm font-semibold text-primary transition-colors hover:bg-accent sm:col-span-2 sm:justify-self-start">
+              <button type="submit" className="bg-ivory px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:bg-accent sm:col-span-2 sm:justify-self-start">
                 Submit Enquiry
               </button>
-              <p className="-mt-4 text-xs text-ivory/50 sm:col-span-2">Your enquiry is sent to our team via WhatsApp.</p>
+              <p className="-mt-4 text-xs text-ivory sm:col-span-2">Your enquiry is sent to our team via WhatsApp.</p>
             </form>
           )}
         </Reveal>
@@ -114,7 +114,7 @@ export function Contact() {
 function Field({ label, error, id, children }: { label: string; error?: string | undefined; id: string; children: React.ReactNode }) {
   return (
     <div>
-      <label htmlFor={id} className="eyebrow text-ivory/60">{label}</label>
+      <label htmlFor={id} className="eyebrow text-ivory">{label}</label>
       {children}
       {error && <p role="alert" className="mt-2 text-xs text-accent">{error}</p>}
     </div>
