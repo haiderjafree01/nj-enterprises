@@ -71,7 +71,7 @@ export function Contact() {
             <div role="status" className="flex h-full flex-col justify-center border border-ivory/15 p-10">
               <CheckCircle2 className="h-10 w-10 text-ivory" strokeWidth={1.25} />
               <h3 className="mt-6 font-display text-3xl">Thank you — almost done.</h3>
-              <p className="mt-3 text-ivory/70">Your enquiry has opened in WhatsApp. Just press send and our team will get back to you.</p>
+              <p className="mt-3 text-ivory/85">Your enquiry has opened in WhatsApp. Just press send and our team will get back to you.</p>
               <button onClick={() => setSent(false)} className="link-underline mt-8 self-start text-sm font-semibold text-ivory">Send another enquiry</button>
             </div>
           ) : (

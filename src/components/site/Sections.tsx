@@ -153,7 +153,7 @@ export function WhyUs() {
             <Reveal key={t} delay={i * 100}>
               <div className="h-px w-8 bg-accent" />
               <h3 className="mt-5 font-display text-2xl text-ivory">{t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ivory/70">{d}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ivory/85">{d}</p>
             </Reveal>
           ))}
         </div>
