@@ -47,7 +47,7 @@ export function Hero() {
           Rated {BUSINESS.rating}/5 on Google · {BUSINESS.reviews} Reviews
         </div>
       </div>
-      <a href="#properties" aria-label="Scroll down" className="absolute bottom-8 right-8 hidden flex-col items-center gap-3 text-ivory/90 lg:flex">
+      <a href="#properties" aria-label="Scroll down" className="absolute bottom-8 right-8 hidden flex-col items-center gap-3 text-ivory lg:flex">
         <span className="eyebrow [writing-mode:vertical-rl]">Scroll</span>
         <span className="relative h-16 w-px bg-ivory/20">
           <span className="animate-scroll-line absolute inset-0 bg-accent" />

@@ -102,7 +102,7 @@ export function Contact() {
               <button type="submit" className="bg-ivory px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:bg-accent sm:col-span-2 sm:justify-self-start">
                 Submit Enquiry
               </button>
-              <p className="-mt-4 text-xs text-ivory/85 sm:col-span-2">Your enquiry is sent to our team via WhatsApp.</p>
+              <p className="-mt-4 text-xs text-ivory sm:col-span-2">Your enquiry is sent to our team via WhatsApp.</p>
             </form>
           )}
         </Reveal>
