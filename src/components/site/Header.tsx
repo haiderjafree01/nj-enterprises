@@ -61,8 +61,8 @@ export function Header() {
               href={`#${n.id}`}
               className={cn(
                 "link-underline pb-1 text-sm font-medium transition-colors",
-                solid ? "text-foreground/80 hover:text-primary" : "text-ivory/85 hover:text-ivory",
-                active === n.id && (solid ? "!text-primary bg-[length:100%_1px]" : "!text-ivory bg-[length:100%_1px]"),
+                solid ? "text-foreground/80 hover:text-foreground" : "text-ivory/85 hover:text-ivory",
+                active === n.id && (solid ? "!text-foreground bg-[length:100%_1px]" : "!text-ivory bg-[length:100%_1px]"),
               )}
             >
               {n.label}
@@ -71,7 +71,7 @@ export function Header() {
         </nav>
         <a
           href="#properties"
-          className="hidden border border-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-transparent hover:text-primary lg:inline-block"
+          className="hidden border border-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-transparent hover:text-foreground lg:inline-block"
         >
           Explore Properties
         </a>
@@ -97,7 +97,7 @@ export function Header() {
                 key={n.id}
                 href={`#${n.id}`}
                 onClick={() => setOpen(false)}
-                className={cn("border-b border-border py-3 font-display text-2xl", active === n.id ? "text-primary" : "text-foreground")}
+                className="border-b border-border py-3 font-display text-2xl text-foreground"
               >
                 {n.label}
               </a>

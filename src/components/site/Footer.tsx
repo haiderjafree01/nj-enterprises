@@ -8,20 +8,20 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-[1.4fr_1fr_1fr] lg:px-10">
         <div>
           <Logo light />
-          <p className="mt-6 max-w-sm text-sm leading-relaxed text-ivory/60">
+          <p className="mt-6 max-w-sm text-sm leading-relaxed text-ivory/80">
             A real estate agency helping clients explore property opportunities around Pine Avenue, Valencia and Lahore.
           </p>
         </div>
         <nav aria-label="Footer">
-          <p className="eyebrow text-accent">Navigate</p>
-          <ul className="mt-5 grid grid-cols-2 gap-3 text-sm text-ivory/70">
+          <p className="eyebrow text-ivory">Navigate</p>
+          <ul className="mt-5 grid grid-cols-2 gap-3 text-sm text-ivory/85">
             {NAV.map((n) => (
               <li key={n.id}><a href={`#${n.id}`} className="link-underline hover:text-ivory">{n.label}</a></li>
             ))}
           </ul>
         </nav>
-        <div className="space-y-3 text-sm text-ivory/70">
-          <p className="eyebrow text-accent">Visit & Call</p>
+        <div className="space-y-3 text-sm text-ivory/85">
+          <p className="eyebrow text-ivory">Visit & Call</p>
           <p className="pt-2">{BUSINESS.addressShort}</p>
           <p><a href={`tel:${BUSINESS.phoneTel}`} className="link-underline hover:text-ivory">{BUSINESS.phoneDisplay}</a></p>
           <p><a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-ivory">WhatsApp</a></p>
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-ivory/10">
-        <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-ivory/40 lg:px-10">© {new Date().getFullYear()} NJ Enterprises. All rights reserved.</p>
+        <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-ivory/65 lg:px-10">© {new Date().getFullYear()} NJ Enterprises. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -48,11 +48,11 @@ export function Contact() {
           </Reveal>
           <Reveal delay={150} className="mt-12 space-y-6">
             <a href={`tel:${BUSINESS.phoneTel}`} className="flex items-center gap-4">
-              <Phone className="h-5 w-5 text-accent" strokeWidth={1.5} />
+              <Phone className="h-5 w-5 text-ivory" strokeWidth={1.5} />
               <span className="link-underline font-display text-2xl">{BUSINESS.phoneDisplay}</span>
             </a>
             <p className="flex items-start gap-4 text-ivory/80">
-              <MapPin className="mt-1 h-5 w-5 shrink-0 text-accent" strokeWidth={1.5} />
+              <MapPin className="mt-1 h-5 w-5 shrink-0 text-ivory" strokeWidth={1.5} />
               {BUSINESS.addressShort}
             </p>
           </Reveal>
@@ -69,10 +69,10 @@ export function Contact() {
         <Reveal delay={200}>
           {sent ? (
             <div role="status" className="flex h-full flex-col justify-center border border-ivory/15 p-10">
-              <CheckCircle2 className="h-10 w-10 text-accent" strokeWidth={1.25} />
+              <CheckCircle2 className="h-10 w-10 text-ivory" strokeWidth={1.25} />
               <h3 className="mt-6 font-display text-3xl">Thank you — almost done.</h3>
-              <p className="mt-3 text-ivory/70">Your enquiry has opened in WhatsApp. Just press send and our team will get back to you.</p>
-              <button onClick={() => setSent(false)} className="link-underline mt-8 self-start text-sm font-semibold text-accent">Send another enquiry</button>
+              <p className="mt-3 text-ivory/85">Your enquiry has opened in WhatsApp. Just press send and our team will get back to you.</p>
+              <button onClick={() => setSent(false)} className="link-underline mt-8 self-start text-sm font-semibold text-ivory">Send another enquiry</button>
             </div>
           ) : (
             <form noValidate onSubmit={onSubmit} className="grid gap-8 border border-ivory/15 p-8 sm:grid-cols-2 sm:p-10">
@@ -116,7 +116,7 @@ function Field({ label, error, id, children }: { label: string; error?: string |
     <div>
       <label htmlFor={id} className="eyebrow text-ivory">{label}</label>
       {children}
-      {error && <p role="alert" className="mt-2 text-xs text-accent">{error}</p>}
+      {error && <p role="alert" className="mt-2 text-xs text-ivory">{error}</p>}
     </div>
   );
 }

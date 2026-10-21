@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 function SectionHead({ eyebrow, title, light }: { eyebrow: string; title: string; light?: boolean }) {
   return (
     <Reveal>
-      <p className={cn("eyebrow flex items-center gap-3", light ? "text-accent" : "text-primary")}>
+      <p className={cn("eyebrow flex items-center gap-3", light ? "text-ivory" : "text-foreground")}>
         <span className={cn("h-px w-10", light ? "bg-accent" : "bg-primary")} />
         {eyebrow}
       </p>
@@ -80,7 +80,7 @@ export function About() {
           <ul className="mt-10 border-t border-border">
             {principles.map((p, i) => (
               <Reveal as="li" key={p} delay={250 + i * 100} className="flex items-center gap-6 border-b border-border py-5">
-                <span className="font-display text-xl text-primary">0{i + 1}</span>
+                <span className="font-display text-xl text-foreground">0{i + 1}</span>
                 <span className="font-display text-2xl text-foreground">{p}</span>
               </Reveal>
             ))}
@@ -123,7 +123,7 @@ export function Rating({ light }: { light?: boolean }) {
     <div className={cn("inline-flex items-center gap-4 border px-5 py-4", light ? "border-ivory/20" : "border-border")}>
       <span className={cn("font-display text-4xl", light ? "text-ivory" : "text-foreground")}>{BUSINESS.rating}</span>
       <span>
-        <span className={cn("flex", light ? "text-accent" : "text-primary")} aria-label={`${BUSINESS.rating} out of 5 stars`}>
+        <span className={cn("flex", light ? "text-ivory" : "text-primary")} aria-label={`${BUSINESS.rating} out of 5 stars`}>
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-3.5 w-3.5 fill-current" />)}
         </span>
         <span className={cn("mt-1 block text-xs", light ? "text-ivory/70" : "text-muted-foreground")}>
@@ -153,7 +153,7 @@ export function WhyUs() {
             <Reveal key={t} delay={i * 100}>
               <div className="h-px w-8 bg-accent" />
               <h3 className="mt-5 font-display text-2xl text-ivory">{t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ivory/70">{d}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ivory/85">{d}</p>
             </Reveal>
           ))}
         </div>
@@ -217,7 +217,7 @@ export function Process() {
           {steps.map(([t, d], i) => (
             <Reveal as="li" key={t} delay={i * 180} className="relative border-t border-primary/20 pt-8">
               <span className="absolute -top-px left-0 h-px w-16 bg-primary" />
-              <span className="font-display text-7xl font-light text-primary">0{i + 1}</span>
+              <span className="font-display text-7xl font-light text-foreground">0{i + 1}</span>
               <h3 className="mt-4 font-display text-3xl text-foreground">{t}</h3>
               <p className="mt-3 max-w-xs leading-relaxed text-muted-foreground">{d}</p>
             </Reveal>
