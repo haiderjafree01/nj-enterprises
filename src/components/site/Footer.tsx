@@ -13,7 +13,7 @@ export function Footer() {
           </p>
         </div>
         <nav aria-label="Footer">
-          <p className="eyebrow text-accent">Navigate</p>
+          <p className="eyebrow text-ivory">Navigate</p>
           <ul className="mt-5 grid grid-cols-2 gap-3 text-sm text-ivory/70">
             {NAV.map((n) => (
               <li key={n.id}><a href={`#${n.id}`} className="link-underline hover:text-ivory">{n.label}</a></li>
@@ -21,7 +21,7 @@ export function Footer() {
           </ul>
         </nav>
         <div className="space-y-3 text-sm text-ivory/70">
-          <p className="eyebrow text-accent">Visit & Call</p>
+          <p className="eyebrow text-ivory">Visit & Call</p>
           <p className="pt-2">{BUSINESS.addressShort}</p>
           <p><a href={`tel:${BUSINESS.phoneTel}`} className="link-underline hover:text-ivory">{BUSINESS.phoneDisplay}</a></p>
           <p><a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-ivory">WhatsApp</a></p>

@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 function SectionHead({ eyebrow, title, light }: { eyebrow: string; title: string; light?: boolean }) {
   return (
     <Reveal>
-      <p className={cn("eyebrow flex items-center gap-3", light ? "text-accent" : "text-foreground")}>
+      <p className={cn("eyebrow flex items-center gap-3", light ? "text-ivory" : "text-foreground")}>
         <span className={cn("h-px w-10", light ? "bg-accent" : "bg-primary")} />
         {eyebrow}
       </p>
@@ -123,7 +123,7 @@ export function Rating({ light }: { light?: boolean }) {
     <div className={cn("inline-flex items-center gap-4 border px-5 py-4", light ? "border-ivory/20" : "border-border")}>
       <span className={cn("font-display text-4xl", light ? "text-ivory" : "text-foreground")}>{BUSINESS.rating}</span>
       <span>
-        <span className={cn("flex", light ? "text-accent" : "text-primary")} aria-label={`${BUSINESS.rating} out of 5 stars`}>
+        <span className={cn("flex", light ? "text-ivory" : "text-primary")} aria-label={`${BUSINESS.rating} out of 5 stars`}>
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-3.5 w-3.5 fill-current" />)}
         </span>
         <span className={cn("mt-1 block text-xs", light ? "text-ivory/70" : "text-muted-foreground")}>

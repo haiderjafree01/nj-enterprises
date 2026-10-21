@@ -24,7 +24,7 @@ export function Hero() {
           {LINES.map((l, i) => (
             <span key={l} className="block overflow-hidden pb-2">
               <span className="animate-rise block" style={{ animationDelay: `${400 + i * 180}ms` }}>
-                {i === 1 ? <em className="italic text-accent">{l}</em> : l}
+                {i === 1 ? <em className="italic text-ivory">{l}</em> : l}
               </span>
             </span>
           ))}
