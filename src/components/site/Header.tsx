@@ -97,7 +97,7 @@ export function Header() {
                 key={n.id}
                 href={`#${n.id}`}
                 onClick={() => setOpen(false)}
-                className={cn("border-b border-border py-3 font-display text-2xl", active === n.id ? "text-foreground" : "text-foreground")}
+                className="border-b border-border py-3 font-display text-2xl text-foreground"
               >
                 {n.label}
               </a>
