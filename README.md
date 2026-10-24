@@ -1,24 +1,19 @@
-# Pixel Perfect Replica
+# NJ Developers
 
-Implement exactly the screenshot and nothing else
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4159ec7c-8413-46e0-854a-4eb8360ecc36).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Marketing website for NJ Developers, a real-estate agency serving Lahore.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+You need Node.js and npm or Bun.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+Available scripts:
+
+- `npm run dev` — start the Vite development server
+- `npm run build` — create a production build
+- `npm run lint` — run ESLint
+- `npm run test` — run the Vitest test suite

@@ -24,7 +24,7 @@ export function Contact() {
     setErrors(errs);
     if (Object.keys(errs).length) return;
     const msg = [
-      "Property enquiry — NJ Enterprises website",
+      "Property enquiry — NJ Developers website",
       `Name: ${v("name")}`,
       `Phone: ${v("phone")}`,
       `Interested in: ${v("interest")}`,
@@ -57,7 +57,7 @@ export function Contact() {
             </p>
           </Reveal>
           <Reveal delay={250} className="mt-10 flex flex-wrap gap-4">
-            <a href={whatsappLink("Hello NJ Enterprises, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory bg-ivory px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-transparent hover:text-ivory">
+            <a href={whatsappLink("Hello NJ Developers, I'd like to enquire about a property.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory bg-ivory px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-transparent hover:text-ivory">
               <MessageCircle className="h-4 w-4" /> WhatsApp Enquiry
             </a>
             <a href={BUSINESS.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-ivory/30 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ivory hover:bg-ivory hover:text-foreground">

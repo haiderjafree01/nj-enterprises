@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV } from "@/lib/business";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/nj-logo.png";
+const logo = "/images/nj-logo.png";
 
 export function Logo({ light }: { light?: boolean }) {
   return (
-    <a href="#home" className="flex items-center" aria-label="NJ Enterprises home">
+    <a href="#home" className="flex items-center" aria-label="NJ Developers home">
       <img
         src={logo}
-        alt="NJ Enterprises"
+        alt="NJ Developers"
         width={116}
         height={98}
         className={cn(

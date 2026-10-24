@@ -1,10 +1,10 @@
 import { ArrowUpRight, Home, Tag, Building2, TrendingUp, Search, MessageCircle, Star, Quote, MapPin } from "lucide-react";
-import logo from "@/assets/nj-logo.png";
-import residential from "@/assets/residential.jpg";
-import commercial from "@/assets/commercial.jpg";
-import community from "@/assets/community.jpg";
-import avenue from "@/assets/avenue.jpg";
-import interior from "@/assets/interior.jpg";
+const logo = "/images/nj-logo.png";
+const residential = "/images/residential.jpg";
+const commercial = "/images/commercial.jpg";
+const community = "/images/community.jpg";
+const avenue = "/images/avenue.jpg";
+const interior = "/images/interior.jpg?v=2";
 import { Reveal } from "./Reveal";
 import { BUSINESS } from "@/lib/business";
 import { cn } from "@/lib/utils";
@@ -67,15 +67,15 @@ export function About() {
   return (
     <section id="about" className="bg-secondary">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-28 lg:grid-cols-2 lg:px-10 lg:py-36">
-        <Reveal variant="reveal-image" className="relative">
+        <div className="relative">
           <img src={interior} alt="Elegant modern living space" loading="lazy" width={896} height={1152} className="aspect-[4/5] w-full object-cover" />
           <div className="absolute -bottom-6 -right-6 hidden h-40 w-40 border border-primary lg:block" aria-hidden />
-        </Reveal>
+        </div>
         <div>
-          <img src={logo} alt="NJ Enterprises logo" loading="lazy" className="mb-8 h-24 w-auto" />
-          <SectionHead eyebrow="About NJ Enterprises" title="Real Estate Decisions Deserve the Right Guidance." />
+          <img src={logo} alt="NJ Developers logo" loading="lazy" className="mb-8 h-24 w-auto" />
+          <SectionHead eyebrow="About NJ Developers" title="Real Estate Decisions Deserve the Right Guidance." />
           <Reveal delay={150} as="p" className="mt-8 text-lg leading-relaxed text-muted-foreground">
-            At NJ Enterprises, we help property seekers explore real estate opportunities around Pine Avenue, Valencia, and nearby areas of Lahore. Our approach focuses on understanding your requirements, identifying suitable options, and helping you move forward with greater confidence.
+            At NJ Developers, we help property seekers explore real estate opportunities around Pine Avenue, Valencia, and nearby areas of Lahore. Our approach focuses on understanding your requirements, identifying suitable options, and helping you move forward with greater confidence.
           </Reveal>
           <ul className="mt-10 border-t border-border">
             {principles.map((p, i) => (
@@ -143,9 +143,9 @@ export function WhyUs() {
   ];
   return (
     <section className="grid bg-primary lg:grid-cols-2">
-      <Reveal variant="reveal-image" className="min-h-[420px]">
+      <div className="min-h-[420px]">
         <img src={community} alt="Green residential community in Lahore" loading="lazy" width={1280} height={960} className="h-full w-full object-cover" />
-      </Reveal>
+      </div>
       <div className="px-6 py-24 sm:px-12 lg:px-20 lg:py-32">
         <SectionHead light eyebrow="Why Choose Us" title="A Better Way to Navigate Real Estate." />
         <div className="mt-12 grid gap-10 sm:grid-cols-2">

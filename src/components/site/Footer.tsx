@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-ivory/10">
-        <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-ivory/65 lg:px-10">© {new Date().getFullYear()} NJ Enterprises. All rights reserved.</p>
+        <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-ivory/65 lg:px-10">© {new Date().getFullYear()} NJ Developers. All rights reserved.</p>
       </div>
     </footer>
   );
@@ -41,7 +41,7 @@ export function WhatsAppFloat() {
       href={BUSINESS.whatsapp}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with NJ Enterprises on WhatsApp"
+      aria-label="Chat with NJ Developers on WhatsApp"
       className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-transform hover:scale-110"
     >
       <MessageCircle className="h-6 w-6" />

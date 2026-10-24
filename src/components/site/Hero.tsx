@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import hero from "@/assets/hero.jpg";
+const hero = "/images/hero.jpg";
 import { BUSINESS } from "@/lib/business";
 
 const LINES = ["Find the Right Property.", "Build Your Future."];

@@ -6,9 +6,9 @@ import { Contact } from "@/components/site/Contact";
 import { Footer, WhatsAppFloat } from "@/components/site/Footer";
 import { BUSINESS } from "@/lib/business";
 
-const title = "NJ Enterprises | Real Estate Agency on Pine Avenue, Lahore";
+const title = "NJ Developers | Real Estate Agency on Pine Avenue, Lahore";
 const description =
-  "Find residential, commercial and investment property around Pine Avenue and Valencia, Lahore with NJ Enterprises. Rated 4.8/5 on Google.";
+  "Find residential, commercial and investment property around Pine Avenue and Valencia, Lahore with NJ Developers. Rated 4.8/5 on Google.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

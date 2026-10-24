@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: "NJ Enterprises",
+  name: "NJ Developers",
   phoneDisplay: "+92 344 4446362",
   phoneTel: "+923444446362",
   whatsapp: "https://wa.me/923444446362",
@@ -7,15 +7,15 @@ export const BUSINESS = {
   addressFull:
     "Main Pine Ave, near Valencia, Ameer Pura, Amirpura Jugghian, Lahore, Punjab, Pakistan",
   // Replace with the verified Google Maps listing URL once supplied.
-  maps: "https://www.google.com/maps/search/?api=1&query=NJ+Enterprises+Main+Pine+Avenue+Valencia+Lahore",
+  maps: "https://www.google.com/maps/search/?api=1&query=NJ+Developers+Main+Pine+Avenue+Valencia+Lahore",
   rating: 4.8,
   reviews: 9,
 };
 
 export const NAV = [
   { id: "home", label: "Home" },
-  { id: "about", label: "About" },
   { id: "properties", label: "Properties" },
+  { id: "about", label: "About" },
   { id: "services", label: "Services" },
   { id: "reviews", label: "Reviews" },
   { id: "contact", label: "Contact" },
