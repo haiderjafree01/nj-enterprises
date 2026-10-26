@@ -17,5 +17,3 @@ Available scripts:
 - `npm run build` — create a production build
 - `npm run lint` — run ESLint
 - `npm run test` — run the Vitest test suite
-
-Test
